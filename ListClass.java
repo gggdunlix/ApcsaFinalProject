@@ -1,18 +1,14 @@
 import java.util.*;
-/**
- * Write a description of class ListClass here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
+//UNIT 5- Writing classes
 public class ListClass
 {
-    private boolean set;
-    public ArrayList<String> list = new ArrayList<>();
-    public ArrayList<String> getWordList() {
+    private static boolean set = false;
+    public static ArrayList<String> list = new ArrayList<>();
+    public static ArrayList<String> getWordList() {
         if (set) {
             return list;
         }
+        set = true;
         list.add("able");
         list.add("about");
         list.add("account");
@@ -304,7 +300,6 @@ public class ListClass
         list.add("office");
         list.add("oil");
         list.add("old");
-        list.add("on");
         list.add("only");
         list.add("open");
         list.add("operation");
@@ -333,7 +328,6 @@ public class ListClass
         list.add("place");
         list.add("position");
         list.add("possible");
-        list.add("pot");
         list.add("potato");
         list.add("powder");
         list.add("power");
@@ -351,7 +345,6 @@ public class ListClass
         list.add("protest");
         list.add("public");
         list.add("pull");
-        list.add("");
         list.add("red");
         list.add("regret");
         list.add("regular");
