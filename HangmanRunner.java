@@ -1,9 +1,12 @@
 import java.util.*;
 /**
- * Write a description of class HangmanRunner here.
+ * Hang man runner class, allows you to play the game of hangman with the computer!
  *
- * @author (your name)
- * @version (a version number or a date)
+ * Purpose is to allow you to play hangman with yourself 
+ * with a list of random words.
+ *
+ * Version 1.0
+ * Written by Joshua Alessi and Ahmet Demirbas
  */
 public class HangmanRunner
 {
@@ -18,10 +21,12 @@ public class HangmanRunner
     public static String[] stages = {stage1, stage2, stage3, stage4, stage5, stage6, stage7, stage8};
     public static void main(String[] args) {
         ArrayList<String> list = ListClass.getWordList();
+        //UNIT 1 - Primitive Types
         int result = (int) (Math.random() * ((list.size() - 1) - 0 + 1)) + 0;
         String word = list.get(result);
         ArrayList<String> letters = new ArrayList<>();
         for (int l = 0; l < word.length(); l++) {
+            // UNIT 4 - Loops & Iterations
             char o = word.charAt(l);
             letters.add(String.valueOf(o));
         }
@@ -38,6 +43,7 @@ public class HangmanRunner
             }
             System.out.println("\nEnter Letter:");
             String nextln = scan.nextLine();
+            //UNIT 3 - Boolean Expressions
             if (nextln.length() != 1) {
                 System.out.println("Only type one letter!");
             } else {
@@ -55,13 +61,15 @@ public class HangmanRunner
         if (tries >= 8) {
             System.out.println(stage8 + "\nYOU LOST!");
         } else {
-            System.out.println("YOU WON! Word was: " + word);
+            System.out.println("YOU WON! Word was: " + word + ".\nYou had " + tries + " false attempts.");
         }
-        System.out.println("Would you like to play again? y / n") {
-            String nextln2 = scan.nextLine();
-            if (nextln2.equals("y")) {
-                main(null);
-            }
+        System.out.println("Would you like to play again? y / n");
+        String nextln2 = scan.nextLine();
+        if (nextln2.equals("y")) {
+            // UNIT 10 : RECURSION
+            main(null);
+        } else {
+            return;
         }
     }
 }
