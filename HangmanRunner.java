@@ -1,4 +1,5 @@
 import java.util.*;
+import java.awt.*;
 /**
  * Hang man runner class, allows you to play the game of hangman with the computer!
  *
@@ -101,12 +102,22 @@ public class HangmanRunner
             System.out.println("YOU WON! Word was: " + word + ".\nYou had " + tries + " false attempts.");
         }
         System.out.println("Would you like to play again? y / n");
+        // USES CLASSES FOUND ONLINE
+        Frame againPanel = new Frame("Hangman");
+        againPanel.pack();
+        againPanel.add(new Button("Quit"));
+        againPanel.add(new Button("Play Again"));
+        againPanel.setVisible(true);
         String nextln2 = scan.nextLine();
         if (nextln2.equals("y")) {
+            againPanel.setVisible(false);
             // UNIT 10 : RECURSION
             main(null);
         } else {
+            againPanel.setVisible(false);
             return;
         }
+        
+        
     }
 }
