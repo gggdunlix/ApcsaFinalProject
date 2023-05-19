@@ -1,5 +1,8 @@
 import java.util.*;
+import javax.swing.*;
 import java.awt.*;
+import java.awt.event.*;
+
 /**
  * Hang man runner class, allows you to play the game of hangman with the computer!
  *
@@ -9,8 +12,9 @@ import java.awt.*;
  * Version 1.0
  * Written by Joshua Alessi and Ahmet Demirbas
  */
-public class HangmanRunner
+public class HangmanRunner  
 {
+    static JButton again, stop;
     public static String stage1 = "  +---+\n  |   |\n      |\n      |\n      |\n      |\n=========";
     public static String stage2 = "  +---+\n  |   |\n  o   |\n      |\n      |\n      |\n=========";
     public static String stage3 = "  +---+\n  |   |\n  o   |\n  |   |\n      |\n      |\n=========";
@@ -97,27 +101,23 @@ public class HangmanRunner
             }
         }
         if (tries >= 7) {
-            System.out.println(stage8 + "\nYOU LOST!");
+            System.out.println(stage8 + "\nYOU LOST! Word was " + word + ".");
         } else {
             System.out.println("YOU WON! Word was: " + word + ".\nYou had " + tries + " false attempts.");
         }
         System.out.println("Would you like to play again? y / n");
-        // USES CLASSES FOUND ONLINE
-        Frame againPanel = new Frame("Hangman");
-        againPanel.pack();
-        againPanel.add(new Button("Quit"));
-        againPanel.add(new Button("Play Again"));
-        againPanel.setVisible(true);
+        
         String nextln2 = scan.nextLine();
         if (nextln2.equals("y")) {
-            againPanel.setVisible(false);
             // UNIT 10 : RECURSION
             main(null);
         } else {
-            againPanel.setVisible(false);
             return;
         }
         
+        
+    }
+    public void buttonYesPressed(ActionEvent e) {
         
     }
 }
