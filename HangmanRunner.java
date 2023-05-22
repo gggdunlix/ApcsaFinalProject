@@ -1,7 +1,4 @@
 import java.util.*;
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
 
 /**
  * Hang man runner class, allows you to play the game of hangman with the computer!
@@ -14,7 +11,6 @@ import java.awt.event.*;
  */
 public class HangmanRunner  
 {
-    static JButton again, stop;
     public static String stage1 = "  +---+\n  |   |\n      |\n      |\n      |\n      |\n=========";
     public static String stage2 = "  +---+\n  |   |\n  o   |\n      |\n      |\n      |\n=========";
     public static String stage3 = "  +---+\n  |   |\n  o   |\n  |   |\n      |\n      |\n=========";
@@ -115,9 +111,6 @@ public class HangmanRunner
             return;
         }
         
-        
-    }
-    public void buttonYesPressed(ActionEvent e) {
         
     }
 }
