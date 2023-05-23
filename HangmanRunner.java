@@ -1,5 +1,9 @@
 import java.util.*;
-
+import javax.swing.*;
+import java.awt.*;
+import java.io.*;
+import java.io.InputStream;
+import javax.sound.sampled.*;
 /**
  * Hang man runner class, allows you to play the game of hangman with the computer!
  *
@@ -11,6 +15,16 @@ import java.util.*;
  */
 public class HangmanRunner  
 {
+    public static void playSound(File file) {
+        try {
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(file.getAbsoluteFile());
+            Clip clip = AudioSystem.getClip();
+            clip.open(audioInputStream);
+            clip.start();
+        } catch (Exception e) {
+            System.err.println("Couldn't play sound: " + e);
+        }
+    }
     public static String stage1 = "  +---+\n  |   |\n      |\n      |\n      |\n      |\n=========";
     public static String stage2 = "  +---+\n  |   |\n  o   |\n      |\n      |\n      |\n=========";
     public static String stage3 = "  +---+\n  |   |\n  o   |\n  |   |\n      |\n      |\n=========";
@@ -87,8 +101,11 @@ public class HangmanRunner
                                 blanks.set(i, nextln);
                             }
                         }
+                        // OUTSIDE SOURCE (AudioInputStream)
+                        playSound(new File("C:/Users/jhaless/Documents/apcsaaudio/good.wav"));
                     } else {
-                        tries++;                 
+                        tries++;
+                        playSound(new File("C:/Users/jhaless/Documents/apcsaaudio/over.wav"));
                     }
                     usedLetters.set(usedLetters.indexOf(nextln), "*");
                 } else {
