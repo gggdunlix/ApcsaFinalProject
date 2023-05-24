@@ -115,8 +115,10 @@ public class HangmanRunner
         }
         if (tries >= 7) {
             System.out.println(stage8 + "\nYOU LOST! Word was " + word + ".");
+            playSound(new File("C:/Users/jhaless/Documents/apcsaaudio/sad.wav"));
         } else {
             System.out.println("YOU WON! Word was: " + word + ".\nYou had " + tries + " false attempts.");
+            playSound(new File("C:/Users/jhaless/Documents/apcsaaudio/win.wav"));
         }
         System.out.println("Would you like to play again? y / n");
         
