@@ -9,12 +9,13 @@ public class ListClass
             return list;
         }
         set = true;
-        list.add("able");
+        list.add("ariq");
+        list.add("ahmet");
+        list.add("joshua");
         list.add("about");
         list.add("account");
         list.add("acid");
         list.add("across");
-        list.add("act");
         list.add("addition");
         list.add("adjustment");
         list.add("advertisement");
@@ -22,16 +23,11 @@ public class ListClass
         list.add("again");
         list.add("against");
         list.add("agreement");
-        list.add("airapparatus");
         list.add("apple");
         list.add("approval");
         list.add("arch");
         list.add("argument");
-        list.add("arm");
         list.add("army");
-        list.add("art");
-        list.add("as");
-        list.add("at");
         list.add("attack");
         list.add("attempt");
         list.add("attention");
@@ -41,8 +37,6 @@ public class ListClass
         list.add("Awake");
         list.add("baby");
         list.add("back");
-        list.add("bad");
-        list.add("bag");
         list.add("balance");
         list.add("ball");
         list.add("band");
@@ -53,8 +47,6 @@ public class ListClass
         list.add("be");
         list.add("beautiful");
         list.add("because");
-        list.add("bed");
-        list.add("bee");
         list.add("before");
         list.add("belief");
         list.add("bell");
@@ -79,8 +71,6 @@ public class ListClass
         list.add("book");
         list.add("boot");
         list.add("bottle");
-        list.add("box");
-        list.add("boy");
         list.add("brain");
         list.add("brake");
         list.add("branch");
@@ -98,8 +88,6 @@ public class ListClass
         list.add("distance");
         list.add("distribution");
         list.add("division");
-        list.add("do");
-        list.add("dog");
         list.add("door");
         list.add("doubt");
         list.add("down");
@@ -111,7 +99,6 @@ public class ListClass
         list.add("drop");
         list.add("dry");
         list.add("dust");
-        list.add("ear");
         list.add("early");
         list.add("earth");
         list.add("east");
@@ -120,7 +107,6 @@ public class ListClass
         list.add("error");
         list.add("even");
         list.add("event");
-        list.add("ever");
         list.add("every");
         list.add("example");
         list.add("exchange");
@@ -128,7 +114,6 @@ public class ListClass
         list.add("expansion");
         list.add("Experience");
         list.add("expert");
-        list.add("eye");
         list.add("face");
         list.add("fact");
         list.add("fall");
@@ -152,7 +137,6 @@ public class ListClass
         list.add("flight");
         list.add("floor");
         list.add("flower");
-        list.add("fly");
         list.add("fold");
         list.add("food");
         list.add("foolish");
@@ -179,11 +163,9 @@ public class ListClass
         list.add("give");
         list.add("glass");
         list.add("glove");
-        list.add("go");
         list.add("goat");
         list.add("growth");
         list.add("guide");
-        list.add("gun");
         list.add("hair");
         list.add("hammer");
         list.add("hand");
@@ -192,7 +174,6 @@ public class ListClass
         list.add("harbor");
         list.add("hard");
         list.add("harmony");
-        list.add("hat");
         list.add("hate");
         list.add("have");
         list.add("he");
@@ -207,7 +188,6 @@ public class ListClass
         list.add("history");
         list.add("increase");
         list.add("industry");
-        list.add("ink");
         list.add("insect");
         list.add("instrument");
         list.add("insurance");
@@ -223,7 +203,6 @@ public class ListClass
         list.add("jump");
         list.add("keep");
         list.add("kettle");
-        list.add("key");
         list.add("kick");
         list.add("lock");
         list.add("long");
@@ -245,7 +224,6 @@ public class ListClass
         list.add("mass");
         list.add("match");
         list.add("material");
-        list.add("may");
         list.add("meal");
         list.add("measure");
         list.add("meat");
@@ -285,27 +263,17 @@ public class ListClass
         list.add("need");
         list.add("needle");
         list.add("nerve");
-        list.add("net");
-        list.add("new");
-        list.add("news");
         list.add("night");
-        list.add("no");
         list.add("noise");
         list.add("normal");
-        list.add("nut");
         list.add("observation");
-        list.add("of");
-        list.add("off");
         list.add("offer");
         list.add("office");
-        list.add("oil");
-        list.add("old");
         list.add("only");
         list.add("open");
         list.add("operation");
         list.add("opinion");
         list.add("opposite");
-        list.add("or");
         list.add("orange");
         list.add("pain");
         list.add("paint");
@@ -362,11 +330,9 @@ public class ListClass
         list.add("ring");
         list.add("river");
         list.add("road");
-        list.add("rod");
         list.add("roll");
         list.add("roof");
         list.add("screw");
-        list.add("sea");
         list.add("seat");
         list.add("second");
         list.add("secret");
@@ -381,7 +347,6 @@ public class ListClass
         list.add("separate");
         list.add("serious");
         list.add("servant");
-        list.add("sex");
         list.add("shade");
         list.add("shake");
         list.add("shame");
@@ -432,7 +397,6 @@ public class ListClass
         list.add("summer");
         list.add("sun");
         list.add("support");
-        list.add("");
         list.add("twist");
         list.add("umbrella");
         list.add("under");
