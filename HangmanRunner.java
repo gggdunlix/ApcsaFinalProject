@@ -15,6 +15,10 @@ import javax.sound.sampled.*;
  */
 public class HangmanRunner  
 {
+    private static String goodSound = "C:/Users/jhaless/Documents/apcsaaudio/good.wav";
+    private static String badSound = "C:/Users/jhaless/Documents/apcsaaudio/over.wav";
+    private static String winSound = "C:/Users/jhaless/Documents/apcsaaudio/win.wav";
+    private static String loseSound = "C:/Users/jhaless/Documents/apcsaaudio/sad.wav";
     public static void playSound(File file) {
         try {
             AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(file.getAbsoluteFile());
@@ -102,10 +106,10 @@ public class HangmanRunner
                             }
                         }
                         // OUTSIDE SOURCE (AudioInputStream)
-                        playSound(new File("C:/Users/jhaless/Documents/apcsaaudio/good.wav"));
+                        playSound(new File(goodSound));
                     } else {
                         tries++;
-                        playSound(new File("C:/Users/jhaless/Documents/apcsaaudio/over.wav"));
+                        playSound(new File(badSound));
                     }
                     usedLetters.set(usedLetters.indexOf(nextln), "*");
                 } else {
@@ -115,10 +119,10 @@ public class HangmanRunner
         }
         if (tries >= 7) {
             System.out.println(stage8 + "\nYOU LOST! Word was " + word + ".");
-            playSound(new File("C:/Users/jhaless/Documents/apcsaaudio/sad.wav"));
+            playSound(new File(loseSound));
         } else {
             System.out.println("YOU WON! Word was: " + word + ".\nYou had " + tries + " false attempts.");
-            playSound(new File("C:/Users/jhaless/Documents/apcsaaudio/win.wav"));
+            playSound(new File(winSound));
         }
         System.out.println("Would you like to play again? y / n");
         
